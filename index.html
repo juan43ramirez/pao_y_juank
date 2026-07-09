@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Paola & Juan Camilo · 13 Dic 2026</title>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Paola & Juan Camilo · 13 · Diciembre · 2026" />
+<meta property="og:description" content="Nos casamos en Medellín — toda la información y la confirmación de asistencia, aquí. / We're getting married in Medellín — all the info and RSVP here." />
+<meta property="og:image" content="https://juan43ramirez.github.io/pao_y_juank/images/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://juan43ramirez.github.io/pao_y_juank/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --green:#5a7a5a;         /* sage / emerald muted */
+    --green-deep:#3f5b3f;
+    --lavender:#9f8fc4;      /* lilac */
+    --lavender-soft:#e7e0f2;
+    --cream:#faf8f4;
+    --ink:#2f2b33;
+    --muted:#6f6a75;
+    --line:#e6e1da;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Montserrat',sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.7;
+    font-weight:300;
+  }
+  h1,h2,h3,.display{font-family:'Cormorant Garamond',serif;font-weight:500;letter-spacing:.5px}
+  a{color:var(--green-deep);text-decoration:none}
+  /* Content links must be visibly links; nav/buttons opt out. */
+  section a:not(.btn),footer a{text-decoration:underline;text-decoration-color:var(--lavender);text-underline-offset:3px;font-weight:400}
+  section a:not(.btn):hover{text-decoration-color:var(--green-deep)}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  .tag{display:inline-block;font-size:.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--lavender);font-weight:500;margin-bottom:14px}
+
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(250,248,244,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .brand{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--green-deep);letter-spacing:1px}
+  .nav-links{display:flex;gap:22px;align-items:center}
+  .nav-links a{font-size:.78rem;letter-spacing:1px;text-transform:uppercase;color:var(--muted);font-weight:400}
+  .nav-links a:hover{color:var(--green)}
+  .lang{display:flex;border:1px solid var(--green);border-radius:999px;overflow:hidden;font-size:.72rem;letter-spacing:1px}
+  .lang button{background:none;border:none;padding:5px 12px;cursor:pointer;color:var(--green);font-family:inherit;font-weight:500}
+  .lang button.active{background:var(--green);color:#fff}
+  .menu-toggle{display:none;background:none;border:none;font-size:1.5rem;color:var(--green-deep);cursor:pointer}
+  @media(max-width:820px){
+    .nav-links{position:fixed;inset:62px 0 auto 0;flex-direction:column;background:var(--cream);padding:20px 24px;gap:16px;border-bottom:1px solid var(--line);display:none}
+    .nav-links.open{display:flex}
+    .menu-toggle{display:block}
+  }
+
+  /* HERO */
+  header.hero{
+    min-height:88vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+    background:linear-gradient(160deg,#eef2ea 0%,var(--lavender-soft) 100%);
+    position:relative;padding:48px 24px;
+  }
+  /* Save-the-date illustration: ink strokes on transparent, floats on the gradient. */
+  .hero-sketch{max-height:46vh;max-width:min(84vw,420px);width:auto}
+  /* Desktop: sketch beside the date/countdown block; wraps to a stack on mobile. */
+  .hero-row{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:28px 84px;margin-top:56px}
+  .hero-info{display:flex;flex-direction:column;align-items:center}
+  .hero .names{font-size:clamp(3rem,9vw,6.5rem);line-height:1;color:var(--green-deep)}
+  .hero .amp{color:var(--lavender);font-style:italic}
+  .hero .date{margin-top:18px;font-size:1rem;letter-spacing:5px;text-transform:uppercase;color:var(--green)}
+  .hero .place{margin-top:6px;color:var(--muted);letter-spacing:2px;font-size:.85rem;text-transform:uppercase}
+  /* COUNTDOWN */
+  .countdown{display:flex;gap:26px;justify-content:center;margin-top:8px}
+  .countdown div{width:72px}
+  .countdown .num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--green-deep);line-height:1}
+  .countdown .lbl{font-size:.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+
+  /* SECTIONS */
+  section{padding:74px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(2rem,5vw,2.8rem);color:var(--green-deep);text-align:center}
+  section h2 + .tag{margin:4px 0 0}
+  section .lead{text-align:center;color:var(--muted);max-width:640px;margin:14px auto 0}
+  .center{text-align:center}
+  .grid{display:grid;gap:26px;margin-top:44px}
+  .grid>*{min-width:0} /* lets scrollable children stay inside their column */
+  .grid.two{grid-template-columns:repeat(2,1fr)}
+  .grid.three{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:760px){.grid.two,.grid.three{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px}
+  .card h3{font-size:1.5rem;color:var(--green);margin-bottom:8px}
+  .card .when{font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--lavender);font-weight:500}
+
+  /* TIMELINE */
+  .timeline{max-width:680px;margin:44px auto 0;position:relative}
+  .timeline::before{content:"";position:absolute;left:170px;top:6px;bottom:6px;width:1px;background:var(--line)}
+  .ti{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:14px 0;position:relative;align-items:center}
+  .ti .t{text-align:right;color:var(--green);font-weight:500;font-size:.85rem;letter-spacing:1px}
+  .ti .c h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--ink)}
+  .ti .c p{color:var(--muted);font-size:.92rem}
+  .ti::after{content:"";position:absolute;left:166px;top:50%;transform:translateY(-50%);width:9px;height:9px;border-radius:50%;background:var(--lavender);border:2px solid var(--cream)}
+  @media(max-width:600px){
+    .timeline::before,.ti::after{display:none}
+    .ti{grid-template-columns:1fr;gap:2px}
+    .ti .t{text-align:left}
+  }
+
+  /* PLACEHOLDER PILL */
+  .ph{display:inline-block;background:var(--lavender-soft);color:var(--green-deep);border:1px dashed var(--lavender);border-radius:6px;padding:1px 8px;font-size:.8rem;font-style:italic}
+
+  .faq-item{border-bottom:1px solid var(--line);padding:18px 0;max-width:760px;margin:0 auto}
+  .faq-item h3{font-family:'Montserrat',sans-serif;font-weight:500;font-size:1rem;color:var(--green-deep);cursor:pointer;display:flex;justify-content:space-between}
+  .faq-item p{color:var(--muted);font-size:.92rem;margin-top:10px;display:none}
+  .faq-item.open p{display:block}
+  .faq-item .chev{color:var(--lavender);transition:transform .2s}
+  .faq-item.open .chev{transform:rotate(45deg)}
+
+  .btn{display:inline-block;background:var(--green);color:#fff;padding:13px 34px;border-radius:999px;font-size:.78rem;letter-spacing:2px;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;transition:background .2s}
+  .btn:hover{background:var(--green-deep)}
+
+  /* LOOKS GALLERY */
+  .looks-label{text-align:center;font-size:.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--lavender);font-weight:500;margin-bottom:10px}
+  .looks{display:flex;gap:10px;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--lavender) var(--line)}
+  .looks::-webkit-scrollbar{height:6px}
+  .looks::-webkit-scrollbar-track{background:var(--line);border-radius:3px}
+  .looks::-webkit-scrollbar-thumb{background:var(--lavender);border-radius:3px}
+  .looks-hint{font-size:.68rem;letter-spacing:1px;color:var(--lavender);text-transform:none;font-weight:400}
+  .looks img{width:118px;flex-shrink:0;aspect-ratio:3/4;object-fit:cover;border-radius:10px;cursor:pointer;border:1px solid var(--line)}
+  /* TIMELINE (Nuestra Historia) */
+  .tl{display:flex;overflow-x:auto;padding:6px 0 12px;margin-top:34px;scrollbar-width:thin;scrollbar-color:var(--lavender) var(--line);-webkit-overflow-scrolling:touch}
+  .tl::-webkit-scrollbar{height:6px}
+  .tl::-webkit-scrollbar-track{background:var(--line);border-radius:3px}
+  .tl::-webkit-scrollbar-thumb{background:var(--lavender);border-radius:3px}
+  .tl-item{flex:1 1 0;min-width:0;text-align:center;cursor:pointer;position:relative;padding:30px 6px 6px}
+  @media(max-width:820px){.tl-item{flex:0 0 140px}}
+  .tl-item::before{content:'';position:absolute;top:12px;left:0;right:0;height:2px;background:var(--line)}
+  .tl-item:first-child::before{left:50%}
+  .tl-item:last-child::before{right:50%}
+  .tl-item::after{content:'';position:absolute;top:6px;left:50%;transform:translateX(-50%);width:14px;height:14px;border-radius:50%;background:var(--cream);border:2px solid var(--lavender);transition:background .2s}
+  .tl-item:hover::after,.tl-item.on::after{background:var(--lavender)}
+  .tl-year{font-size:.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--green)}
+  .tl-title{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.25;color:var(--green-deep);margin-top:4px}
+  .tl-item.on .tl-title{color:var(--lavender)}
+  .tl-detail{display:flex;gap:24px;align-items:center;margin:18px auto 0;max-width:720px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;text-align:left}
+  .tl-detail img{width:220px;max-width:38vw;aspect-ratio:4/3;object-fit:cover;border-radius:10px;flex-shrink:0}
+  .tl-detail p{color:var(--muted)}
+  @media(max-width:640px){.tl-detail{flex-direction:column;text-align:center}.tl-detail img{width:100%;max-width:100%}}
+  #lightbox{position:fixed;inset:0;background:rgba(47,43,51,.92);display:none;align-items:center;justify-content:center;z-index:100;cursor:pointer}
+  #lightbox.open{display:flex}
+  #lightbox img{max-width:92vw;max-height:92vh;border-radius:12px}
+
+  /* RSVP */
+  .rsvp{background:linear-gradient(160deg,var(--lavender-soft),#eef2ea);text-align:center}
+  .rsvp .box{background:#fff;border-radius:16px;max-width:520px;margin:34px auto 0;padding:34px;border:1px solid var(--line)}
+  .rsvp input{width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:1rem;margin-bottom:14px;text-align:center;letter-spacing:2px}
+  .rsvp .guest{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);text-align:left}
+  .rsvp .seg{display:flex;gap:6px;flex-shrink:0}
+  .rsvp .seg button{padding:7px 16px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;font-family:inherit;font-size:.8rem;color:var(--ink)}
+  .rsvp .seg button.on{background:var(--green);color:#fff;border-color:var(--green)}
+  .rsvp .f-row{margin-top:16px;text-align:left}
+  .rsvp .f-row>label{font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px}
+  .rsvp textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:.95rem;resize:vertical;min-height:64px}
+  .rsvp .chk{display:flex;align-items:center;gap:10px;margin-top:12px;text-align:left;font-size:.92rem}
+  .rsvp .chk input{width:auto;margin:0}
+  .rsvp input.num{width:90px;margin:0;letter-spacing:0}
+  .rsvp .err{color:#a33;font-size:.9rem;margin-top:10px}
+  .rsvp select{padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:.85rem;flex-shrink:0}
+  .note{font-size:.78rem;color:var(--muted);font-style:italic;margin-top:14px}
+
+  .venue-img{display:block;width:100%;max-width:300px;margin:16px auto;border-radius:12px;border:1px solid var(--line)}
+  .gift-card{text-align:center;display:flex;flex-direction:column}
+  .gift-card p{font-size:.88rem}
+  .qr-img{display:block;width:210px;height:210px;margin:14px auto 0;border:1px solid var(--line);border-radius:12px;align-self:center}
+  .btn-small{padding:9px 22px;font-size:.7rem;align-self:center;margin-top:auto;margin-bottom:auto}
+
+  footer{background:var(--green-deep);color:#dfe6dc;text-align:center;padding:48px 24px}
+  footer .names{font-family:'Cormorant Garamond',serif;font-size:2rem;color:#fff}
+  footer .amp{color:var(--lavender)}
+  footer p{font-size:.8rem;letter-spacing:1px;margin-top:8px;color:#b9c6b4}
+
+  /* Language toggle: only ever HIDE the inactive language, so every element
+     keeps its natural display (block, inline-block, …). */
+  html[lang="es"] [data-en]{display:none !important}
+  html[lang="en"] [data-es]{display:none !important}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <span class="brand">P <span style="color:var(--lavender)">&amp;</span> J</span>
+    <button class="menu-toggle" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <div class="nav-links" id="navlinks">
+      <a href="#programa"><span data-es>Programa</span><span data-en>Schedule</span></a>
+      <a href="#rsvp">RSVP</a>
+      <a href="#vestimenta"><span data-es>Vestimenta</span><span data-en>Dress Code</span></a>
+      <a href="#internacional"><span data-es>Internacional</span><span data-en>International</span></a>
+      <a href="#historia"><span data-es>Historia</span><span data-en>Our Story</span></a>
+      <a href="#regalos"><span data-es>Regalos</span><span data-en>Gifts</span></a>
+      <a href="#faq">FAQ</a>
+      <div class="lang">
+        <button id="btn-es" class="active" onclick="setLang('es')">ES</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <span class="tag"><span data-es>¡Nos casamos!</span><span data-en>We're getting married!</span></span>
+  <h1 class="names">Paola <span class="amp">&amp;</span> Juan Camilo</h1>
+  <div class="hero-row">
+    <img class="hero-sketch" src="images/sketch.webp" alt="Paola y Juan Camilo con su perrita — ilustración" />
+    <div class="hero-info">
+      <p class="date" style="margin-top:0"><span data-es>13 · Diciembre · 2026</span><span data-en>December 13 · 2026</span></p>
+      <p class="place">Medellín, Colombia</p>
+      <div class="countdown" id="cd" style="margin-top:28px">
+        <div><div class="num" id="cd-d">–</div><div class="lbl"><span data-es>Días</span><span data-en>Days</span></div></div>
+        <div><div class="num" id="cd-h">–</div><div class="lbl"><span data-es>Horas</span><span data-en>Hours</span></div></div>
+        <div><div class="num" id="cd-m">–</div><div class="lbl">Min</div></div>
+        <div><div class="num" id="cd-s">–</div><div class="lbl"><span data-es>Seg</span><span data-en>Sec</span></div></div>
+      </div>
+      <p style="margin-top:34px"><a class="btn" href="#rsvp"><span data-es>Confirmar asistencia</span><span data-en>RSVP</span></a></p>
+    </div>
+  </div>
+</header>
+
+<!-- PROGRAMA -->
+<section id="programa">
+  <div class="wrap">
+    <h2><span data-es>Programa</span><span data-en>Schedule</span></h2>
+    <p class="tag center" style="display:block"><span data-es>13 · Diciembre · 2026</span><span data-en>December 13 · 2026</span></p>
+
+    <div class="grid two" style="margin-top:30px;align-items:center">
+      <div class="card" style="text-align:center">
+        <span class="when"><span data-es>Domingo 13 de diciembre</span><span data-en>Sunday, December 13</span></span>
+        <h3>Centro de Eventos Cielo Alto</h3>
+        <p>
+          <span data-es>Misa, cóctel y fiesta — <strong>todo en un mismo lugar</strong>.</span>
+          <span data-en>Mass, cocktails and the party — <strong>all in one place</strong>.</span>
+        </p>
+        <img class="venue-img" src="images/cielo-alto.jpg" alt="Centro de Eventos Cielo Alto" loading="lazy" />
+        <p><a href="https://maps.google.com/?q=Cielo+Alto+Centro+de+Eventos+Medellin" target="_blank">📍 Carrera 9E #16A Sur-104, Medellín, Antioquia</a></p>
+        <p style="color:var(--muted);font-size:.92rem;margin-top:8px"><span data-es>🚗 Parqueadero para 70 carros, con valet parking.</span><span data-en>🚗 Parking for 70 cars, with valet service.</span><br/><span data-es>🚕 También llegan Uber, DiDi y taxi.</span><span data-en>🚕 Uber, DiDi and taxis also available.</span></p>
+      </div>
+      <div class="timeline" style="margin:0 auto">
+      <div class="ti"><div class="t">5:00 p.m. – 6:00 p.m.</div><div class="c">
+        <h3><span data-es>Misa</span><span data-en>Mass</span></h3>
+        <p><span data-es>Ceremonia al aire libre.</span><span data-en>Open-air ceremony.</span></p>
+      </div></div>
+      <div class="ti"><div class="t">6:00 p.m. – 7:00 p.m.</div><div class="c">
+        <h3><span data-es>Cóctel</span><span data-en>Cocktail Hour</span></h3>
+        <p><span data-es>Un brindis con la vista de Medellín.</span><span data-en>A toast with the Medellín view.</span></p>
+      </div></div>
+      <div class="ti"><div class="t">7:00 p.m. – 8:00 p.m.</div><div class="c">
+        <h3><span data-es>Cena</span><span data-en>Dinner</span></h3>
+        <p><span data-es>La mesa está puesta para ustedes.</span><span data-en>The table is set for you.</span></p>
+      </div></div>
+      <div class="ti"><div class="t">8:00 p.m. – 12:00 a.m.</div><div class="c">
+        <h3><span data-es>Fiesta</span><span data-en>Party</span></h3>
+        <p><span data-es>¡A bailar! Hasta la <strong>medianoche en punto</strong>.</span><span data-en>Dance it out — until <strong>midnight sharp</strong>!</span></p>
+      </div></div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section id="rsvp" class="rsvp">
+  <div class="wrap">
+    <h2><span data-es>Confirmen su Asistencia</span><span data-en>RSVP</span></h2>
+    <p class="tag center" style="display:block">RSVP</p>
+    <p class="lead">
+      <span data-es>Ingresen <strong>el código de su invitación</strong> y confirmen por todo su grupo.</span>
+      <span data-en>Enter <strong>the code on your invitation</strong> to RSVP for your whole group.</span>
+    </p>
+    <div class="box">
+      <div id="rsvp-entry">
+        <input id="code" type="text" data-es-ph="CÓDIGO" data-en-ph="CODE" maxlength="12" />
+        <button class="btn" id="rsvp-btn" onclick="rsvp()"><span data-es>Continuar</span><span data-en>Continue</span></button>
+        <div id="rsvp-err"></div>
+      </div>
+      <div id="rsvp-form"></div>
+      <p class="note" id="rsvp-demo-note">
+        <span class="ph"><span data-es>RSVP en construcción</span><span data-en>RSVP under construction</span></span>
+      </p>
+      <p class="note">
+        <span data-es>¿Dudas? <a href="https://wa.me/573004122523" target="_blank">Escríbannos por WhatsApp</a>.</span>
+        <span data-en>Questions? <a href="https://wa.me/573004122523" target="_blank">Message us on WhatsApp</a>.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- VESTIMENTA -->
+<section id="vestimenta">
+  <div class="wrap">
+    <h2><span data-es>Código de Vestimenta</span><span data-en>Dress Code</span></h2>
+    <p class="tag center" style="display:block"><span data-es>Formal y elegante</span><span data-en>Formal &amp; elegant</span></p>
+    <div class="grid two">
+      <div class="card center">
+        <h3><span data-es>Ellos</span><span data-en>Men</span></h3>
+        <p><strong><span data-es>Traje oscuro y corbata</span><span data-en>Dark suit and tie</span></strong></p>
+        <p><span data-es>Evitar: blanco, marfil y morados.</span><span data-en>Avoid: white, ivory and purples.</span></p>
+      </div>
+      <div class="card center">
+        <h3><span data-es>Ellas</span><span data-en>Women</span></h3>
+        <p><strong><span data-es>Vestido largo</span><span data-en>Long dress</span></strong></p>
+        <p><span data-es>Evitar: cortos y estampados; blanco, marfil y morados.</span><span data-en>Avoid: short or printed dresses; white, ivory and purples.</span></p>
+        <p><span data-es>👠 Tacón grueso recomendado — la misa es sobre césped.</span><span data-en>👠 Block heels recommended — the Mass is on grass.</span></p>
+      </div>
+    </div>
+    <p class="note center">
+      <span data-es>El blanco es de los novios y los morados (lila, lavanda, violeta) de las damas y los padrinos.</span>
+      <span data-en>White belongs to the couple; purples (lilac, lavender, violet) to the wedding party.</span>
+    </p>
+    <div class="grid two" style="margin-top:36px">
+      <div><p class="looks-label"><span data-es>Inspiración — ellos</span><span data-en>Inspiration — Men</span> <span class="looks-hint"><span data-es>desliza →</span><span data-en>swipe →</span></span></p>
+      <div class="looks"><img src="images/looks/ellos-1.jpg" loading="lazy" alt="Look ellos 1" onclick="lightbox(this)" /><img src="images/looks/ellos-2.jpg" loading="lazy" alt="Look ellos 2" onclick="lightbox(this)" /><img src="images/looks/ellos-3.jpg" loading="lazy" alt="Look ellos 3" onclick="lightbox(this)" /><img src="images/looks/ellos-4.jpg" loading="lazy" alt="Look ellos 4" onclick="lightbox(this)" /><img src="images/looks/ellos-5.jpg" loading="lazy" alt="Look ellos 5" onclick="lightbox(this)" /><img src="images/looks/ellos-6.jpg" loading="lazy" alt="Look ellos 6" onclick="lightbox(this)" /></div></div>
+      <div><p class="looks-label"><span data-es>Inspiración — ellas</span><span data-en>Inspiration — Women</span> <span class="looks-hint"><span data-es>desliza →</span><span data-en>swipe →</span></span></p>
+      <div class="looks"><img src="images/looks/ellas-1.jpg" loading="lazy" alt="Look ellas 1" onclick="lightbox(this)" /><img src="images/looks/ellas-2.jpg" loading="lazy" alt="Look ellas 2" onclick="lightbox(this)" /><img src="images/looks/ellas-3.jpg" loading="lazy" alt="Look ellas 3" onclick="lightbox(this)" /><img src="images/looks/ellas-4.jpg" loading="lazy" alt="Look ellas 4" onclick="lightbox(this)" /><img src="images/looks/ellas-5.jpg" loading="lazy" alt="Look ellas 5" onclick="lightbox(this)" /><img src="images/looks/ellas-6.jpg" loading="lazy" alt="Look ellas 6" onclick="lightbox(this)" /></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INVITADOS INTERNACIONALES -->
+<section id="internacional">
+  <div class="wrap">
+    <h2><span data-es>Para Nuestros Invitados Internacionales</span><span data-en>For Our International Guests</span></h2>
+    <p class="tag center" style="display:block"><span data-es>Bienvenidos a Colombia</span><span data-en>Welcome to Colombia</span></p>
+    <p class="lead">
+      <span data-es>Queremos que se sientan en casa desde que aterricen.</span>
+      <span data-en>We want you to feel at home from the moment you land.</span>
+    </p>
+    <div class="grid two">
+      <div class="card">
+        <h3><span data-es>Aeropuerto</span><span data-en>Airport</span></h3>
+        <p>
+          <span data-es>Vuelen a <strong><a href="https://maps.google.com/?q=Aeropuerto+Internacional+Jos%C3%A9+Mar%C3%ADa+C%C3%B3rdova" target="_blank">José María Córdova (MDE)</a></strong>, a unos <strong>30 minutos</strong> del evento.</span>
+          <span data-en>Fly into <strong><a href="https://maps.google.com/?q=Jos%C3%A9+Mar%C3%ADa+C%C3%B3rdova+International+Airport" target="_blank">José María Córdova (MDE)</a></strong>, about <strong>30 minutes</strong> from the venue.</span>
+        </p>
+      </div>
+      <div class="card">
+        <h3><span data-es>Al Llegar</span><span data-en>On Arrival</span></h3>
+        <p>
+          <span data-es>Desde el aeropuerto funcionan bien el taxi oficial, Uber, Cabify y DiDi.</span>
+          <span data-en>Official taxis, Uber, Cabify and DiDi all work well from the airport.</span>
+        </p>
+      </div>
+      <div class="card">
+        <h3><span data-es>Hotel Recomendado</span><span data-en>Host Hotel</span></h3>
+        <p>
+          <span data-es><strong><a href="https://www.letterahotel.com/" target="_blank">Lettera Hotel</a></strong>, en Provenza (El Poblado), con <strong>tarifa especial</strong> para nuestros invitados. <span class="ph">Código y fecha límite: por confirmar</span></span>
+          <span data-en><strong><a href="https://www.letterahotel.com/en/" target="_blank">Lettera Hotel</a></strong>, in Provenza (El Poblado), with a <strong>special rate</strong> for our guests. <span class="ph">Code &amp; deadline: TBC</span></span>
+        </p>
+      </div>
+      <div class="card">
+        <h3><span data-es>Acompañantes Locales</span><span data-en>Buddy Program</span></h3>
+        <p>
+          <span data-es>Conectaremos a cada invitado internacional con un <strong>anfitrión local de Medellín</strong>: recomendaciones, compañía y planes en grupo. Márquenlo al <a href="#rsvp">confirmar su asistencia</a> y antes del viaje les presentamos a su anfitrión.</span>
+          <span data-en>We'll pair each international guest with a <strong>local Medellín host</strong> — tips, company and group plans. Tick the box when you <a href="#rsvp">RSVP</a> and we'll introduce you to your host before the trip.</span>
+        </p>
+      </div>
+    </div>
+    <div style="margin-top:44px">
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <h3><span><span data-es>¿Necesito visa para entrar a Colombia?</span><span data-en>Do I need a visa for Colombia?</span></span><span class="chev">+</span></h3>
+        <p><span data-es>La mayoría de nacionalidades — <strong>EE. UU., Canadá y la UE incluidas</strong> — entran sin visa hasta 90 días. Muchas nacionalidades que sí requieren visa quedan exentas si tienen una <strong>visa vigente de EE. UU. o Schengen</strong>. Consulten la <a href="https://colombia.travel/en/practical-information/visas-and-embassies" target="_blank">información oficial</a>.</span><span data-en>Most nationalities — <strong>including the US, Canada and the EU</strong> — enter visa-free for up to 90 days. Many visa-required nationalities are exempt if they hold a <strong>valid US or Schengen visa</strong>. Check the <a href="https://colombia.travel/en/practical-information/visas-and-embassies" target="_blank">official info</a>.</span></p>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <h3><span><span data-es>¿Necesito hablar español?</span><span data-en>Do I need to speak Spanish?</span></span><span class="chev">+</span></h3>
+        <p><span data-es>Medellín no es una ciudad bilingüe: fuera de las zonas turísticas hay poco inglés. El programa de acompañantes ayuda a nuestros invitados internacionales.</span><span data-en>No — but note Medellín is not a bilingual city: English is limited outside tourist areas like <a href="https://en.wikipedia.org/wiki/El_Poblado" target="_blank">El Poblado</a>. Translation apps cover the gaps, and the buddy program pairs you with an English-speaking local host.</span></p>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <h3><span><span data-es>¿Es segura Medellín?</span><span data-en>Is Medellín safe?</span></span><span class="chev">+</span></h3>
+        <p><span data-es>Sí, con las precauciones normales de ciudad grande: pidan Uber/DiDi o taxi por la noche y no den papaya con el celular en la calle. El Poblado, la zona del hotel, es muy turística.</span><span data-en>Yes, with normal big-city precautions: use Uber/DiDi or taxis at night and don't flash your phone on the street. El Poblado, the hotel area, is very tourist-friendly.</span></p>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <h3><span><span data-es>¿Qué clima hace en Medellín en diciembre?</span><span data-en>What's the weather like in December?</span></span><span class="chev">+</span></h3>
+        <p><span data-es>Medellín es la <a href="https://es.wikipedia.org/wiki/Medell%C3%ADn#Clima" target="_blank">ciudad de la eterna primavera</a>: clima templado todo el año, entre 20 y 28 °C, con posibilidad de lluvia. Traigan una chaqueta ligera para la noche.</span><span data-en>Medellín is the <a href="https://en.wikipedia.org/wiki/Medell%C3%ADn#Climate" target="_blank">"city of eternal spring"</a>: mild all year, 20–28 °C (68–82 °F), with a chance of rain. Bring a light jacket for the evening.</span></p>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <h3><span><span data-es>¿Moneda y pagos?</span><span data-en>Currency &amp; payments?</span></span><span class="chev">+</span></h3>
+        <p><span data-es>La moneda es el <a href="https://www.xe.com/currencyconverter/convert/?From=CAD&amp;To=COP" target="_blank">peso colombiano (COP)</a>. En la mayoría de lugares reciben tarjeta, pero conviene llevar algo de efectivo.</span><span data-en>The currency is the <a href="https://www.xe.com/currencyconverter/convert/?From=CAD&amp;To=COP" target="_blank">Colombian peso (COP)</a>. Cards are widely accepted, but it's worth carrying some cash.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="historia">
+  <div class="wrap">
+    <h2><span data-es>Nuestra Historia</span><span data-en>Our Story</span></h2>
+    <p class="tag center" style="display:block">Pao &amp; Juank</p>
+    <div class="tl" id="tl"></div>
+    <div class="tl-detail" id="tl-detail"></div>
+  </div>
+</section>
+
+<!-- FOTOS -->
+<section id="fotos">
+  <div class="wrap">
+    <h2><span data-es>Sus Fotos</span><span data-en>Your Photos</span></h2>
+    <p class="tag center" style="display:block"><span data-es>Compartan su lente</span><span data-en>Share your lens</span></p>
+    <p class="lead">
+      <span data-es>Durante y después de la boda, suban sus fotos y videos a nuestro álbum compartido — queremos verlo todo. El álbum es privado: dejen su Gmail al confirmar asistencia y les llegará la invitación.</span>
+      <span data-en>During and after the wedding, add your photos and videos to our shared album — we want to see it all. The album is private: leave your Gmail when you RSVP and we'll send you the invite.</span>
+    </p>
+    <p class="center" style="margin-top:24px"><a class="btn" href="https://photos.app.goo.gl/hLGuwAYpkkEk1m238" target="_blank">📸 <span data-es>Abrir el álbum compartido</span><span data-en>Open the shared album</span></a></p>
+  </div>
+</section>
+
+<!-- REGALOS -->
+<section id="regalos">
+  <div class="wrap">
+    <h2><span data-es>Regalos</span><span data-en>Gifts</span></h2>
+    <p class="tag center" style="display:block"><span data-es>Su presencia es el mejor regalo</span><span data-en>Having you there is what matters</span></p>
+    <p class="lead">
+      <span data-es>Si además quieren darnos un detalle, pueden hacerlo por transferencia desde su país, o en efectivo el día de la fiesta con la tradicional <strong>lluvia de sobres</strong>.</span>
+      <span data-en>If you'd also like to give us something, send a transfer from wherever you are, or bring cash to the party for the Colombian tradition of <strong>"lluvia de sobres"</strong> — a cash gift in an envelope.</span>
+    </p>
+    <div class="grid three">
+      <div class="card gift-card">
+        <div class="when">🇨🇴 Colombia</div>
+        <h3>Bre-B</h3>
+        <p><span data-es>Escaneen el QR desde la app de su banco.</span><span data-en>Scan the QR from your banking app.</span></p>
+        <img class="qr-img" src="images/qr-bancolombia.png" alt="QR Bancolombia Bre-B" loading="lazy" />
+      </div>
+      <div class="card gift-card">
+        <div class="when">🇨🇦 <span data-es>Canadá</span><span data-en>Canada</span></div>
+        <h3>Interac e-Transfer</h3>
+        <p><span data-es>Copien el correo y envíen su e-Transfer (depósito automático, sin pregunta de seguridad).</span><span data-en>Copy the email and send your e-Transfer (autodeposit — no security question).</span></p>
+        <button class="btn btn-small" onclick="copyInterac(this)"><span data-es>Copiar correo</span><span data-en>Copy email</span></button>
+      </div>
+      <div class="card gift-card">
+        <div class="when">🇺🇸 USA</div>
+        <h3>Zelle</h3>
+        <p><span data-es>Escaneen el QR desde la app de su banco.</span><span data-en>Scan the QR from your bank's app.</span></p>
+        <img class="qr-img" src="images/qr-zelle.png" alt="Zelle QR code" loading="lazy" />
+      </div>
+    </div>
+    <p class="note center">
+      💌 <span data-es>En la fiesta tendremos el buzón para la lluvia de sobres, si prefieren efectivo.</span>
+      <span data-en>There will also be an envelope box at the reception if you prefer to give cash.</span>
+    </p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <h2><span data-es>Preguntas Frecuentes</span><span data-en>Frequently Asked Questions</span></h2>
+    <p class="tag center" style="display:block">FAQ</p>
+    <div style="margin-top:34px">
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <h3><span><span data-es>¿Hasta qué hora es la fiesta?</span><span data-en>What time does the party end?</span></span><span class="chev">+</span></h3>
+        <p><span data-es>Como es domingo, hasta las <strong>12:00 de la noche en punto</strong> — lleguen puntuales y bailen desde temprano.</span><span data-en>Since it's a Sunday, <strong>midnight sharp</strong> — come on time and start dancing early.</span></p>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <h3><span><span data-es>¿Habrá opciones vegetarianas o para alergias?</span><span data-en>Will there be vegetarian / allergy-friendly options?</span></span><span class="chev">+</span></h3>
+        <p><span data-es>Sí — cuéntennos sus restricciones al confirmar su asistencia y nos encargamos del resto.</span><span data-en>Yes — tell us your restrictions when you RSVP and we'll take care of the rest.</span></p>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <h3><span><span data-es>¿Podemos llevar a los niños?</span><span data-en>Can we bring our kids?</span></span><span class="chev">+</span></h3>
+        <p><span data-es>¡Sí! Los niños están invitados a la <strong>misa y la cena</strong> en familia. Cuando empiece la fiesta (<strong>8:00 p.m.</strong>) abre el <strong>cuidado infantil supervisado</strong> justo al lado del salón — y los más pequeños pueden entrar desde antes si lo prefieren. Indiquen las edades al confirmar su asistencia. <span class="ph">Detalles del servicio: por confirmar</span></span><span data-en>Yes! Children are invited to the <strong>Mass and dinner</strong> with their families. When the party starts (<strong>8:00 p.m.</strong>), <strong>supervised childcare</strong> opens right next to the salon — little ones can go in earlier if you prefer. List their ages when you RSVP. <span class="ph">Service details: TBC</span></span></p>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <h3><span><span data-es>¿Puedo llevar un acompañante?</span><span data-en>Can I bring a plus-one?</span></span><span class="chev">+</span></h3>
+        <p><span data-es>Nos encantaría recibir a todos, pero el cupo es limitado: la invitación es para las personas que aparecen con su código.</span><span data-en>We'd love to host everyone, but space is limited — the invitation covers the people listed under your code.</span></p>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <h3><span><span data-es>¿Perdí mi código o quiero cambiar mi respuesta?</span><span data-en>Lost your code, or need to change your RSVP?</span></span><span class="chev">+</span></h3>
+        <p><span data-es><a href="https://wa.me/573004122523" target="_blank">Escríbannos por WhatsApp</a> y se los reenviamos. Para cambiar la respuesta, ingresen el código de nuevo y reenvíen el formulario.</span><span data-en><a href="https://wa.me/573004122523" target="_blank">Message us on WhatsApp</a> and we'll resend it. To change your answer, enter your code again and resubmit the form.</span></p>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <h3><span><span data-es>¿Hay colores que debamos evitar?</span><span data-en>Any colors we should avoid?</span></span><span class="chev">+</span></h3>
+        <p><span data-es>Sí: el blanco y el marfil (los novios) y <strong>toda la gama de morados</strong> — lila, lavanda, violeta — (las damas y los padrinos). El verde y los demás colores son bienvenidos.</span><span data-en>Yes: white and ivory (the couple) and <strong>the whole purple family</strong> — lilac, lavender, violet — (the wedding party). Green and everything else is welcome.</span></p>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <h3><span><span data-es>¿Hasta cuándo podemos confirmar?</span><span data-en>What's the RSVP deadline?</span></span><span class="chev">+</span></h3>
+        <p><span data-es><span class="ph">Fecha límite por confirmar</span>. Les agradecemos confirmar lo antes posible para ayudarnos con la logística.</span><span data-en><span class="ph">Deadline TBC</span>. We'd appreciate your RSVP as soon as possible to help us plan.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="lightbox" onclick="this.classList.remove('open')"><img id="lightbox-img" alt="" /></div>
+
+<footer>
+  <p class="names">Paola <span class="amp">&amp;</span> Juan Camilo</p>
+  <p><span data-es>13 · Diciembre · 2026</span><span data-en>December 13 · 2026</span> · Medellín, Colombia</p>
+</footer>
+
+<script>
+  // ── Language ────────────────────────────────────────────────────────────
+  function setLang(l){
+    document.documentElement.lang = l;
+    document.getElementById('btn-es').classList.toggle('active', l==='es');
+    document.getElementById('btn-en').classList.toggle('active', l==='en');
+    try{ localStorage.setItem('lang', l); }catch(e){}
+    applyLangDynamic();
+  }
+  // Placeholders and <option> texts can't hold data-es/data-en spans —
+  // they carry both texts in data attributes and get swapped here.
+  function applyLangDynamic(){
+    const en = document.documentElement.lang==='en';
+    document.querySelectorAll('[data-es-ph]').forEach(el=>{ el.placeholder = en ? el.dataset.enPh : el.dataset.esPh; });
+    document.querySelectorAll('option[data-es-t]').forEach(o=>{ o.textContent = en ? o.dataset.enT : o.dataset.esT; });
+  }
+  // Saved choice wins; otherwise English for browsers not set to Spanish.
+  (function(){
+    let saved = null;
+    try{ saved = localStorage.getItem('lang'); }catch(e){}
+    setLang(saved || 'es');
+  })();
+  // Close the mobile menu after tapping a link.
+  document.querySelectorAll('#navlinks a').forEach(a =>
+    a.addEventListener('click', () => document.getElementById('navlinks').classList.remove('open')));
+
+  // ── Countdown (Colombia UTC-5; la misa empieza a las 5:00 p.m.)
+  const target = new Date('2026-12-13T17:00:00-05:00').getTime();
+  function tick(){
+    const d = target - Date.now();
+    if(d<0) return;
+    const v = {
+      'cd-d': Math.floor(d/864e5), 'cd-h': Math.floor(d%864e5/36e5),
+      'cd-m': Math.floor(d%36e5/6e4), 'cd-s': Math.floor(d%6e4/1e3)
+    };
+    for(const id in v) document.getElementById(id).textContent = v[id];
+  }
+  setInterval(tick,1000); tick();
+
+  // ── Regalos: copiar correo Interac ─────────────────────────────────────
+  function copyInterac(btn){
+    navigator.clipboard.writeText('pfernan47'+'@'+'gmail.com').then(()=>{
+      const prev = btn.innerHTML;
+      btn.innerHTML = t('¡Copiado!','Copied!');
+      setTimeout(()=>{ btn.innerHTML = prev; }, 1600);
+    });
+  }
+
+  function lightbox(el){
+    document.getElementById('lightbox-img').src = el.src;
+    document.getElementById('lightbox').classList.add('open');
+  }
+
+  // ── Nuestra historia: timeline ──────────────────────────────────────────
+  const HISTORIA=[
+    {y:'2016',yEn:'2016',img:'images/historia/2016.jpg',
+     tEs:'Donde todo empezó',tEn:'Where it all began',
+     dEs:'Nos conocimos en la universidad, estudiando la misma carrera: ingeniería matemática. Al principio no nos llevábamos nada bien; de hecho, Pao decía que no soportaba a Juanca, porque él la molestaba en todas las clases. Quién lo diría.',
+     dEn:'We met at university, studying the same degree: mathematical engineering. At first we didn’t get along at all — Pao used to say she couldn’t stand Juanca, because he teased her in every class. Who would have thought.'},
+    {y:'Ene 2019',yEn:'Jan 2019',img:'images/historia/2019-01.jpg',
+     tEs:'Una despedida de novela',tEn:'A telenovela farewell',
+     dEs:'Juanca se va de intercambio a Bélgica por un año. Justo antes de subirse al avión, le declara su amor a Pao, como en la mejor novela mexicana. Así quedamos: a distancia, pero sabiendo por fin lo que sentíamos el uno por el otro. Todavía es un misterio qué cambió en nosotros para pasar de odiarnos a amarnos.',
+     dEn:'Juanca leaves for a year-long exchange in Belgium. Right before boarding the plane, he declares his love to Pao, straight out of the best Mexican telenovela. And so we stayed: far apart, but finally knowing what we felt for each other. It’s still a mystery how we went from hating to loving each other.'},
+    {y:'Jun 2019',yEn:'Jun 2019',img:'images/historia/2019-06.jpg',
+     tEs:'Una carta y un sí',tEn:'A letter and a yes',
+     dEs:'Juanca le pide a Pao ser su novia por medio de una carta, como en los viejos tiempos. Aquí empieza nuestra aventura a distancia… aunque, por suerte, no por mucho tiempo.',
+     dEn:'Juanca asks Pao to be his girlfriend with a letter, like in the old days. Our long-distance adventure begins… though luckily, not for long.'},
+    {y:'2019–2021',yEn:'2019–2021',img:'images/historia/2019-2021.jpg',
+     tEs:'Creciendo juntos',tEn:'Growing together',
+     dEs:'Juanca vuelve a Colombia y por fin podemos vivir nuestra relación en persona. Compartimos clases, nos conocemos de verdad y descubrimos algo que nos une hasta hoy: nos encanta cocinar juntos. En julio de 2021 nos graduamos, los dos, de la universidad. Sin saberlo, ahí empezaba uno de nuestros mayores retos: Pao gana una beca para una maestría en Colombia y a Juanca le ofrecen un doctorado en Canadá.',
+     dEn:'Juanca returns to Colombia and we finally get to live our relationship in person. We share classes, truly get to know each other, and discover something that still brings us together today: we love cooking together. In July 2021 we both graduate. Without knowing it, one of our biggest challenges was just beginning: Pao wins a scholarship for a master’s in Colombia and Juanca is offered a PhD in Canada.'},
+    {y:'2021–2023',yEn:'2021–2023',img:'images/historia/2021-2023.jpg',
+     tEs:'La distancia, otra vez',tEn:'Long distance, again',
+     dEs:'Dos años de relación a distancia. Fue una etapa difícil, pero aprendimos a superar juntos cada obstáculo.',
+     dEn:'Two years of long distance. It was a hard chapter, but we learned to overcome every obstacle together.'},
+    {y:'2023',yEn:'2023',img:'images/historia/2023.jpg',
+     tEs:'Rumbo a Canadá',tEn:'Off to Canada',
+     dEs:'Pao termina su maestría y decide irse a Canadá para acompañar a Juanca. Nos casamos por lo civil, con algo muy claro en el corazón: algún día lo celebraríamos por la iglesia y rodeados de toda la gente que queremos.',
+     dEn:'Pao finishes her master’s and moves to Canada to be with Juanca. We get married in a civil ceremony, with one thing clear in our hearts: one day we would celebrate in church, surrounded by everyone we love.'},
+    {y:'May 2025',yEn:'May 2025',img:'images/historia/2025.jpg',
+     tEs:'La propuesta',tEn:'The proposal',
+     dEs:'Durante un viaje por Asia, Juanca prepara una sorpresa inolvidable: una cena romántica junto al mar, en una hermosa isla de Tailandia, donde le pide a Pao matrimonio. Un momento muy especial para los dos.',
+     dEn:'On a trip through Asia, Juanca plans an unforgettable surprise: a romantic dinner by the sea, on a beautiful island in Thailand, where he asks Pao to marry him. A moment we’ll never forget.'},
+    {y:'Dic 2026',yEn:'Dec 2026',img:'images/historia/2026.jpg',
+     tEs:'¡Nos casamos!',tEn:'We’re getting married!',
+     dEs:'Llegó el día con el que tanto soñamos: celebrar nuestro amor junto a nuestras familias y amigos, justo como lo imaginamos.',
+     dEn:'The day we dreamed of is here: celebrating our love with our families and friends, just as we imagined.'}
+  ];
+
+  // A photo is only rendered once it has fully preloaded (tlCur/e.ok below):
+  // inserting an <img> that 404s or is still loading paints a broken frame.
+  let tlCur=0;
+  function tlShow(i){
+    const e=HISTORIA[i]; tlCur=i;
+    document.querySelectorAll('.tl-item').forEach((el,j)=>el.classList.toggle('on',j===i));
+    document.getElementById('tl-detail').innerHTML=
+      (e.ok?'<img src="'+e.img+'" alt="" />':'')+
+      '<div><h3 style="margin-bottom:6px"><span data-es>'+e.tEs+'</span><span data-en>'+e.tEn+'</span></h3>'+
+      '<p><span data-es>'+e.dEs+'</span><span data-en>'+e.dEn+'</span></p></div>';
+  }
+
+  // Hover intent: sweeping the cursor across the strip must not flash every
+  // item it passes over, so the show is delayed until the cursor settles.
+  let tlTimer=null;
+  function tlHover(i){ clearTimeout(tlTimer); tlTimer=setTimeout(()=>tlShow(i),140); }
+  function tlLeave(){ clearTimeout(tlTimer); }
+
+  (function tlRender(){
+    document.getElementById('tl').innerHTML=HISTORIA.map((e,i)=>
+      '<div class="tl-item" onmouseenter="tlHover('+i+')" onmouseleave="tlLeave()" onclick="tlShow('+i+')">'+
+      '<div class="tl-year"><span data-es>'+e.y+'</span><span data-en>'+e.yEn+'</span></div>'+
+      '<div class="tl-title"><span data-es>'+e.tEs+'</span><span data-en>'+e.tEn+'</span></div></div>').join('');
+    tlShow(0);
+    HISTORIA.forEach((e,i)=>{
+      const im=new Image();
+      im.onload=()=>{ e.ok=true; if(tlCur===i) tlShow(i); };
+      im.src=e.img;
+    });
+  })();
+
+  // ── RSVP ────────────────────────────────────────────────────────────────
+  // Once the Apps Script web app is deployed (see apps-script/Code.gs),
+  // paste its URL here. While empty, the box stays in demo mode.
+  const RSVP_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwYQehl_IL_Ako5D1LN2yGRpVXUpwrtLe3hBel4KKxxh0U9FqSjbm378iQNSMgGoxz3dA/exec';
+  // Meal choices per guest, shown once the menu is decided, e.g. ['Res','Pollo','Vegetariano'].
+  const MENU_OPTIONS = [];
+
+  function t(es,en){ return document.documentElement.lang==='en' ? en : es; }
+  function esen(es,en){ return '<span data-es>'+es+'</span><span data-en>'+en+'</span>'; }
+  function rsvpErr(msg){ document.getElementById('rsvp-err').innerHTML = msg ? '<p class="err">'+msg+'</p>' : ''; }
+
+  let rsvpData = null;
+
+  async function rsvp(){
+    const c=document.getElementById('code').value.trim().toUpperCase();
+    if(!c){ rsvpErr(t('Por favor ingresen su código.','Please enter your code.')); return; }
+    if(!RSVP_ENDPOINT){
+      alert(t('Código recibido: '+c+'\n\n(Demo — aquí se abrirá el formulario de su grupo.)',
+              'Code received: '+c+'\n\n(Demo — your group\'s form will open here.)'));
+      return;
+    }
+    rsvpErr('');
+    const btn=document.getElementById('rsvp-btn');
+    btn.disabled=true; btn.style.opacity=.6;
+    try{
+      const r=await fetch(RSVP_ENDPOINT+'?code='+encodeURIComponent(c));
+      const data=await r.json();
+      if(!data.ok){
+        rsvpErr(data.error==='unknown_code'
+          ? t('Código no encontrado. Revisen su invitación o escríbannos.','Code not found. Check your invitation or contact us.')
+          : t('Algo salió mal. Intenten de nuevo.','Something went wrong. Please try again.'));
+      }else{
+        rsvpData=data; renderRsvpForm(data);
+      }
+    }catch(e){
+      rsvpErr(t('No pudimos conectar. Intenten de nuevo en un momento.','Could not connect. Please try again in a moment.'));
+    }finally{ btn.disabled=false; btn.style.opacity=1; }
+  }
+
+  function renderRsvpForm(data){
+    const meal = MENU_OPTIONS.length
+      ? '<select class="g-meal">'+MENU_OPTIONS.map(m=>'<option>'+m+'</option>').join('')+'</select>' : '';
+    const guests = data.guests.map((g,i)=>
+      '<div class="guest" data-i="'+i+'"><span>'+g.name+'</span>'+meal+
+      '<span class="seg">'+
+      '<button type="button" class="g-yes on" onclick="segPick(this,true)">'+esen('Sí','Yes')+'</button>'+
+      '<button type="button" class="g-no" onclick="segPick(this,false)">No</button>'+
+      '</span></div>').join('');
+    document.getElementById('rsvp-entry').style.display='none';
+    document.getElementById('rsvp-form').innerHTML =
+      '<div class="f-row"><label>'+esen('¿Quiénes asisten?','Who is coming?')+'</label>'+guests+'</div>'+
+      '<div class="f-row"><label>'+esen('Restricciones alimentarias','Dietary restrictions')+'</label>'+
+        '<textarea id="rf-diet" data-es-ph="Alergias, vegetariano, etc. (opcional)" data-en-ph="Allergies, vegetarian, etc. (optional)"></textarea></div>'+
+      '<div class="f-row"><label>'+esen('Niños','Children')+'</label>'+
+        '<input id="rf-kids" type="text" style="text-align:left;letter-spacing:0" data-es-ph="Edades de los niños que vienen (ej. 3 y 7 años)" data-en-ph="Ages of the children coming (e.g. 3 and 7)" />'+
+        '<div class="chk"><input type="checkbox" id="rf-childcare" />'+
+        esen('Usarán el cuidado infantil durante la fiesta','They will use the childcare during the party')+'</div></div>'+
+      '<div class="f-row"><label>'+esen('Su contacto','Your contact')+'</label>'+
+        '<input id="rf-contact" type="tel" style="text-align:left;letter-spacing:0" data-es-ph="WhatsApp o correo para poder contactarlos" data-en-ph="WhatsApp or email so we can reach you" /></div>'+
+      '<div class="f-row"><label>'+esen('Álbum de fotos','Photo album')+'</label>'+
+        '<input id="rf-album" type="email" style="text-align:left;letter-spacing:0" data-es-ph="Gmail para invitarlos al álbum compartido (opcional)" data-en-ph="Gmail so we can invite you to the shared album (optional)" /></div>'+
+      '<div class="f-row"><label>'+esen('Programa de acompañantes','Buddy program')+'</label>'+
+        '<select id="rf-buddy" style="width:100%">'+
+        '<option value="" data-es-t="No aplica" data-en-t="Not for us"></option>'+
+        '<option value="Internacional: quiere anfitrión" data-es-t="Venimos de fuera — queremos un anfitrión local" data-en-t="We&#39;re visiting — we&#39;d like a local host"></option>'+
+        '<option value="Local: quiere ser anfitrión" data-es-t="Somos de Medellín — queremos ser anfitriones" data-en-t="We&#39;re local — we&#39;d like to host"></option>'+
+        '</select></div>'+
+      '<div class="f-row"><label>'+esen('Notas','Notes')+'</label>'+
+        '<textarea id="rf-notes" data-es-ph="Algo más que debamos saber (opcional)" data-en-ph="Anything else we should know (optional)"></textarea></div>'+
+      '<p style="margin-top:20px"><button class="btn" id="rf-send" onclick="submitRsvp()">'+esen('Enviar confirmación','Send RSVP')+'</button></p>'+
+      '<div id="rf-err"></div>';
+    applyLangDynamic();
+  }
+
+  function segPick(btn,yes){
+    const seg=btn.parentElement;
+    seg.querySelector('.g-yes').classList.toggle('on',yes);
+    seg.querySelector('.g-no').classList.toggle('on',!yes);
+  }
+
+  async function submitRsvp(){
+    const body={
+      code: rsvpData.code,
+      responses: [...document.querySelectorAll('#rsvp-form .guest')].map(el=>({
+        name: rsvpData.guests[+el.dataset.i].name,
+        attending: el.querySelector('.g-yes').classList.contains('on'),
+        meal: el.querySelector('.g-meal') ? el.querySelector('.g-meal').value : ''
+      })),
+      dietary: document.getElementById('rf-diet').value.trim(),
+      kids: document.getElementById('rf-kids').value.trim(),
+      childcare: document.getElementById('rf-childcare').checked,
+      buddy: document.getElementById('rf-buddy').value,
+      contact: document.getElementById('rf-contact').value.trim(),
+      album: document.getElementById('rf-album').value.trim(),
+      notes: document.getElementById('rf-notes').value.trim(),
+      lang: document.documentElement.lang
+    };
+    const btn=document.getElementById('rf-send');
+    btn.disabled=true; btn.style.opacity=.6;
+    try{
+      // text/plain avoids a CORS preflight, which Apps Script doesn't answer.
+      const r=await fetch(RSVP_ENDPOINT,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(body)});
+      const data=await r.json();
+      if(!data.ok) throw new Error(data.error);
+      document.getElementById('rsvp-form').innerHTML =
+        '<h3 style="margin-top:6px">'+esen('¡Recibido, gracias! Nos vemos en diciembre.','Got it — thank you! See you in December.')+'</h3>'+
+        '<p class="note">'+esen('Si algo cambia, ingresen su código de nuevo y reenvíen.','If anything changes, enter your code again and resubmit.')+'</p>';
+    }catch(e){
+      document.getElementById('rf-err').innerHTML='<p class="err">'+
+        t('No se pudo enviar. Intenten de nuevo.','Could not send. Please try again.')+'</p>';
+      btn.disabled=false; btn.style.opacity=1;
+    }
+  }
+  // Hide the demo note once the real endpoint is wired.
+  if(RSVP_ENDPOINT) document.getElementById('rsvp-demo-note').remove();
+</script>
+</body>
+</html>
